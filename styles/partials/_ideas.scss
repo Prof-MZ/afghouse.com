@@ -1,0 +1,94 @@
+
+    /* ----------------ideas section ------------------ */
+        #ideas-section {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+      background: #02271b;
+      padding: 40px 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 136, 0.2);
+      height: 270px;
+    }
+
+    .message-track {
+      display: flex;
+      transition: transform 0.8s ease-in-out;
+      height: 100%;
+    }
+
+    .idea-card {
+      flex: 0 0 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .client-info {
+      flex: 0 0 200px;
+      text-align: center;
+    }
+
+    .client-info img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid $main-primary-color;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .client-info h3 {
+      color: $main-primary-color;
+      margin: 5px 0 2px;
+      font-size: 20px;
+    }
+
+    .client-info span {
+      font-size: 14px;
+      color: $text-secondary-color;
+    }
+
+    .client-message {
+      flex: 1;
+    }
+
+    .client-message p {
+      color: $text-third-color;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    @media (max-width: 650px) {
+      .idea-card {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+      }
+
+      .client-info {
+        flex: none;
+      }
+
+      .client-message {
+        flex: none;
+      }
+
+      .slider-container {
+        height: auto;
+        padding: 30px 15px;
+      }
+    }

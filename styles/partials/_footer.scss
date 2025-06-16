@@ -1,0 +1,137 @@
+
+
+    /* --------------the footer section---------------------- */
+
+  .site-footer {
+    background: $background-second-color;
+    padding: 60px 20px 20px;
+    color: $text-secondary-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 2px solid rgba($main-primary-color, 0.3);
+    position: relative;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+  }
+
+  .footer-column {
+    flex: 1 1 250px;
+    margin: 20px;
+  }
+
+  .footer-logo {
+    font-size: 2rem;
+    color: $main-primary-color;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .footer-contact p {
+    margin: 8px 0;
+    color: $text-secondary-color;
+  }
+
+  .footer-contact i {
+    color: $main-primary-color;
+    margin-right: 8px;
+  }
+
+  .footer-column h3 {
+    font-size: 1.4rem;
+    color: $main-primary-color;
+    margin-bottom: 15px;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin: 10px 0;
+  }
+
+  .footer-column ul li a {
+    color: $text-secondary-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-column ul li a:hover {
+    color: $main-primary-color;
+  }
+
+  .social-icons a {
+    display: inline-block;
+    margin: 0 8px;
+    color: $text-secondary-color;
+    font-size: 1.3rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: $main-primary-color;
+    transform: translateY(-3px);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba($main-primary-color, 0.1);
+    padding-top: 15px;
+    font-size: 0.9rem;
+    color: $text-fifth-color;
+  }
+
+  .footer-bottom p span {
+    color: $main-primary-color;
+    font-family: cursive;
+  }
+
+  .footer-bottom p span:hover {
+    color: $text-fifth-color;
+    cursor: pointer;
+  }
+
+  /* Back to Top Button */
+  #backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: $main-primary-color;
+    color: $background-second-color;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba($main-primary-color, 0.5);
+    display: none;
+    transition: all 0.4s ease;
+    z-index: 999;
+  }
+
+  #backToTop:hover {
+    background: $main-primary-color;
+    box-shadow: 0 0 20px rgba($main-secondary-color, 0.7);
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .footer-column {
+      margin: 20px 0;
+    }
+  }
+
+
+

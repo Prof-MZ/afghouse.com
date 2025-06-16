@@ -1,0 +1,133 @@
+
+/*----------------Receive News Section--------------------------------------*/
+
+    .subscribe-section {
+      max-width: 1200px;
+      margin: 50px auto;
+      display: flex;
+      align-items: stretch;
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      background-color: $background-third-color;
+      box-shadow: 0 0 20px rgba(0, 255, 128, 0.2);
+    }
+
+    .subscribe-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 2px;
+      background: linear-gradient(180deg, #00ff99, #00cc66);
+      transform: skewX(-20deg);
+      transform-origin: center;
+    }
+
+    .subscribe-box,
+    .social-box {
+      flex: 1;
+      padding: 40px 30px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .subscribe-box h2,
+    .social-box h2 {
+      font-size: 28px;
+      color: $main-secondary-color;
+      margin-bottom: 15px;
+    }
+
+    .subscribe-box p,
+    .social-box p {
+      font-size: 14px;
+      color: $text-secondary-color;
+      margin-bottom: 50px;
+    }
+
+    .subscribe-box input[type="email"] {
+      padding: 12px 15px;
+      border: 1px solid #00ff99;
+      border-radius: 8px;
+      outline: none;
+      width: 70%;
+      max-width: 300px;
+      background: transparent;
+      color: #eee;
+      margin-right: 10px;
+    }
+
+    .subscribe-box button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: $main-secondary-color;
+      color: $text-forth-color;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .subscribe-box button:hover {
+      background: $main-third-color;
+    }
+
+    .success-message {
+      width: 62%;
+      margin-top: 10px;
+      padding: 10px 3px;
+      margin-left: 32px;
+      background: rgba(27, 216, 96, 0.1);
+      border: 1px solid $main-primary-color;
+      border-radius: 8px;
+      color: $main-primary-color;
+      font-size: 13px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.5s ease;
+    }
+
+    .success-message.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .social-icons-s {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .social-icons-s a {
+      text-decoration: none;
+      color: $text-primary-color;
+      font-size: 17px;
+      font-weight: 600;
+      transition: 0s all;
+      /* border-bottom: none; */
+    }
+
+    .social-icons-s a i {
+      padding-right: 3px;
+    }
+
+    .social-icons-s a:hover {
+      color: $main-third-color;
+      border-bottom: 2px solid $main-third-color;
+    }
+
+    @media (max-width: 768px) {
+      .subscribe-section {
+        flex-direction: column;
+      }
+
+      .subscribe-section::before {
+        content: none;
+      }
+    }

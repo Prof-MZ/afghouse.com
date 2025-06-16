@@ -1,0 +1,80 @@
+
+/* --------------Types of Properties-------------------------------- */
+
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.property-type {
+    background: #122f23;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 12px rgba($main-primary-color, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.property-type:hover {
+    box-shadow: 0 0 20px rgba($main-primary-color, 0.6);
+}
+
+.property-type h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: $main-primary-color;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.property-type h3 i {
+    font-size: 2rem;
+}
+
+.property-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.property-option {
+    padding: 14px 20px;
+    border: 1px solid $main-primary-color;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: rgba(27, 216, 96, 0.08);
+    color: #fff;
+    transition: background 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-option span {
+    color: $main-primary-color;
+    font-weight: bold;
+}
+
+.property-option:hover {
+    background: $main-primary-color;
+    color: $background-first-color;
+    cursor: pointer;
+}
+
+.property-option:hover span {
+    color: $background-first-color;
+}
+
+@media (max-width: 900px) {
+    .properties-grid {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .properties-grid {
+    grid-template-columns: 1fr;
+    }
+}

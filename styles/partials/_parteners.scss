@@ -1,0 +1,48 @@
+
+
+    /* --------------the partener section-------------------- */
+    #partnership-section {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 50px 20px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slider {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      animation: slide 20s linear infinite;
+    }
+
+    /* Pause animation on hover */
+    .slider:hover {
+      animation-play-state: paused;
+    }
+
+    .slider img {
+      width: 120px;
+      height: auto;
+      transition: transform 0.4s ease-in-out, opacity 0.4s ease;
+      filter: drop-shadow(0 0 0px $main-secondary-color);
+      cursor: pointer;
+    }
+
+    /* Hovered logo scaling up */
+    .slider img:hover {
+      transform: scale(1.3);
+      opacity: 1;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .slider-track {
+      display: flex;
+      gap: 60px;
+    }
+
